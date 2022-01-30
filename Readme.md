@@ -41,7 +41,7 @@ Step 1 : Make sure to make it executable
 ```
 chmod u+x attendence.py
 ```
-(Assuming you are inside the cloned directory i.e., `online-attendance`)
+(Assuming you are inside the cloned directory i.e., `online-attendance`)  
 Step 2 :
 ```
 make start
@@ -54,5 +54,5 @@ And you are done.
 
 ##### Example:
 ```
-.attendance.py https://www.surveyheart.com/form/60a103fc03dbe251fdca08b0
+./attendance.py https://www.surveyheart.com/form/60a103fc03dbe251fdca08b0
 ```
