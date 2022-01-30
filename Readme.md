@@ -70,6 +70,7 @@ cd .. ; rm -rf online-attendance
 <hr></hr>
 
 ###### TODO:
+[]: To make attendance.py suggest help on wildcards
 []: To update usage with several supported flags  
 []: Add more examples for different usecases.  
 
