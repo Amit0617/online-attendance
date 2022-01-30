@@ -56,3 +56,20 @@ And you are done.
 ```
 ./attendance.py https://www.surveyheart.com/form/60a103fc03dbe251fdca08b0
 ```
+
+### Uninstall
+Step 1 : Clean setup environment
+(Assuming you are in cloned directory i.e., `online-attendance`)  
+```
+make clean
+```
+Step 2 : Clean cloned directory
+```
+cd .. ; rm -rf online-attendance
+```
+<hr></hr>
+
+###### TODO:
+[] To update usage with several supported flags  
+[] Add more examples for different usecases.  
+
