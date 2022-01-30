@@ -70,6 +70,6 @@ cd .. ; rm -rf online-attendance
 <hr></hr>
 
 ###### TODO:
-[] To update usage with several supported flags  
-[] Add more examples for different usecases.  
+[]: To update usage with several supported flags  
+[]: Add more examples for different usecases.  
 
