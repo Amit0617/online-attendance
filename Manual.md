@@ -5,7 +5,7 @@ python3 -m pip --version
 If not installed(`ensurepip` module comes builtin with python) :
 ```
 python3 -m ensurepip --upgrade
-python -m pip install --upgrade pip
+python3 -m pip install --upgrade pip
 ```
 If installing `pip` first time then console should have thrown a warning something like `pip is installed on 'path/where/it/is/installed' which is not on your PATH` and second command given above would not have worked. Then
 ```
@@ -14,7 +14,7 @@ export PATH=path/where/it/is/installed:$PATH
 will add `pip` to your PATH.  
 Get the files for it
 ```
-git clone https://github.com/amit0617/automate_attendance; cd automate_attendance
+git clone https://github.com/amit0617/online-attendance; cd online-attendance
 ```
 Create a venv(helps in better management of different dependencies)
 ```
