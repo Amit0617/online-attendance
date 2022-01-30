@@ -1,4 +1,4 @@
-Warning: It shouldn't be taken as a tool which will work in all conditions but it is almost a complete framework providing you required things at once. You might have to edit/add/delete one or more lines in `#Browser Interactions` part according to your forms in most cases.
+Warning: It shouldn't be taken as a tool which will work in all conditions but it is almost a complete framework providing you required things at once. You might have to edit/add/delete one or more lines in `#Browser Interactions` part in `attendance.py` according to your forms in most cases.
 
 # Online Attendance Automation tool
 
