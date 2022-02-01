@@ -1,4 +1,4 @@
-Warning: It shouldn't be taken as a tool which will work in all conditions but it is almost a complete framework providing you required things at once. You might have to edit/add/delete one or more lines in `#Browser Interactions` part in `attendance.py` according to your forms in most cases.
+Warning: It shouldn't be taken as a tool which will work in all conditions but it is almost a complete framework providing you required things at once. You might have to edit/add/delete one or more lines in `#Browser Interactions` part in `attendance.py` according to your forms in most cases. Make sure to change your name or rollno. in `attendance.py` in the same order it is on form at the place of `Your Name/Rollno.`. 
 
 # Online Attendance Automation tool
 
@@ -52,9 +52,17 @@ Step 3 :
 ```
 And you are done.
 
-##### Example:
+##### Examples:
 ```
 ./attendance.py https://www.surveyheart.com/form/60a103fc03dbe251fdca08b0
+```
+If you want it to happen in background(headless):
+```
+./attendance.py [link] -b
+```
+Maybe you would like it to save a screenshot of final status if something went wrong in headless mode:
+```
+./attendance.py [link] -b -s ~/Pictures/
 ```
 
 ### Uninstall
@@ -70,7 +78,7 @@ cd .. ; rm -rf online-attendance
 <hr></hr>
 
 ###### TODO:
-[]: To make attendance.py suggest help on wildcards
+[]: To make attendance.py suggest help on wildcards  
 []: To update usage with several supported flags  
 []: Add more examples for different usecases.  
 
