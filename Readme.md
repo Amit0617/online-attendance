@@ -1,4 +1,4 @@
-Warning: It shouldn't be taken as a tool which will work in all conditions but it is almost a complete framework providing you required things at once. You might have to edit/add/delete one or more lines in `#Browser Interactions` part in `attendance.py` according to your forms in most cases. Make sure to change your name or rollno. in `attendance.py` in the same order it is on form at the place of `Your Name/Rollno.`. 
+⚠️Warning: It shouldn't be taken as a tool which will work in all conditions but it is almost a complete framework providing you required things at once. You might have to edit/add/delete one or more lines in `#Browser Interactions` part in `attendance.py` according to your forms in most cases. It is not going to help you in marking proxies and shouldn't be misunderstood that way. Make sure to change your name or rollno. in `attendance.py` in the same order it is on form at the place of `YourName/Rollno.`. 
 
 # Online Attendance Automation tool
 
@@ -64,7 +64,10 @@ Maybe you would like it to save a screenshot of final status if something went w
 ```
 ./attendance.py [link] -b -s ~/Pictures/
 ```
-
+Check help:
+```
+./attendance.py -h
+```
 ### Uninstall
 Step 1 : Clean setup environment
 (Assuming you are in cloned directory i.e., `online-attendance`)  
@@ -78,7 +81,7 @@ cd .. ; rm -rf online-attendance
 <hr></hr>
 
 ###### TODO:
-[]: To make attendance.py suggest help on wildcards  
-[]: To update usage with several supported flags  
-[]: Add more examples for different usecases.  
+[] To make attendance.py suggest help on wildcards  
+[] To update usage with several supported flags  
+[] Add more examples for different usecases.  
 
