@@ -33,7 +33,7 @@ def get_path(pos):
 def take_ss():
 		print ("Taking Screenshot...");
 		ss_path = browser.screenshot("{}{}.png".format(path,str(datetime.now())))
-		print ("Screenshot  taken:{}{}.png".format(path,str(datetime.now())))
+		print ("Screenshot  taken:{}.png".format(ss_path)
 
 def print_success():
 	print ("Attendance Marked Successfully!");
@@ -68,17 +68,17 @@ if 'surveyheart' in url:
 	browser.find_by_tag('textarea')[0].fill('YourName/RollNo');
 	#browser.find_by_tag('textarea')[1].fill('YourName/RollNo');
 	browser.find_by_id('submission').click();
-#For google forms with 1 text input only
-'''
-elif 'forms.gle' in url:
-	browser.find_by_tag('input')[1].fill('YourName/RollNo');
-	browser.find_by_class('appsMaterialWizButtonPaperbuttonFocusOverlay').click();
-'''
 #For google forms with 2 test input only
-if 'forms.gle' in url:
+elif 'forms.gle' in url:
 	browser.find_by_tag('input')[2].fill('YourName/RollNo');
 	browser.find_by_tag('input')[3].fill('YourName/RollNo');
 	browser.find_by_css('.appsMaterialWizButtonPaperbuttonLabel')[0].click();
+#For google forms with 1 text input only
+'''
+if 'forms.gle' in url:
+	browser.find_by_tag('input')[1].fill('YourName/RollNo');
+	browser.find_by_class('appsMaterialWizButtonPaperbuttonFocusOverlay').click();
+'''
 #Comment out any one part of google forms above according to your condition	
 	
 #Printing Status in terminal		
@@ -93,7 +93,7 @@ elif browser.is_text_present('successfully'):
 	
 else:
 	print ("Something went wrong");
-	screenshot_path = browser.screenshot('{}splinter.png'.format(path,str(datetime.now())));
-	print ("Screenshot taken:{}{}.png".format(path,str(datetime.now())));
+	ss_path = browser.screenshot('{}splinter.png'.format(path,str(datetime.now())));
+	print ("Screenshot taken:{}.png".format(ss_path));
 browser.quit();
 

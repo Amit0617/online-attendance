@@ -14,11 +14,11 @@ cd online-attendance
 Step 3 : Setup the required environment  
 If you have pip installed  
 ```
-make -s setup
+make -s gecko setup 
 ```
 OR If you are not sure about it  
 ```
-make -s pip setup
+make -s gecko pip setup
 ```
 Step 4 : Make sure your environment is ready
 ```
@@ -37,18 +37,15 @@ geckodriver --> /home/amit/Downloads/geckodriver
 You are ready to automate attendance marking!
 
 ### Usage
-Step 1 : Make sure to make it executable
+Step 1 : Make sure to make it executable(this step is one time only)
 ```
 chmod u+x attendence.py
 ```
 (Assuming you are inside the cloned directory i.e., `online-attendance`)  
+
 Step 2 :
 ```
-make start
-```
-Step 3 :
-```
-.attendance.py [link of your attendance]
+.attendance.py [link of your attendance] OPTIONS
 ```
 And you are done.
 
