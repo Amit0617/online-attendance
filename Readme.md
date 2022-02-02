@@ -45,7 +45,7 @@ chmod u+x attendence.py
 
 Step 2 :
 ```
-.attendance.py [link of your attendance] OPTIONS
+./attendance.py [link of your attendance] OPTIONS
 ```
 And you are done.
 
