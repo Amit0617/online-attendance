@@ -39,7 +39,7 @@ You are ready to automate attendance marking!
 ### Usage
 Step 1 : Make sure to make it executable(this step is one time only)
 ```
-chmod u+x attendence.py
+chmod u+x attendance.py
 ```
 (Assuming you are inside the cloned directory i.e., `online-attendance`)  
 
