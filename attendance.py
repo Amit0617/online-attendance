@@ -81,7 +81,7 @@ elif 'forms.gle' in url:
 	browser.find_by_css('.appsMaterialWizButtonPaperbuttonLabel')[0].click();
 #For google forms with 1 text input only
 '''
-if 'forms.gle' in url:
+elif 'forms.gle' in url:
 	browser.find_by_tag('input')[1].fill('YourName/RollNo');
 	browser.find_by_class('appsMaterialWizButtonPaperbuttonFocusOverlay').click();
 '''
