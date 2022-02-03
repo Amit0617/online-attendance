@@ -5,7 +5,7 @@ from datetime import datetime
 commands = ' '.join(sys.argv[1:]);
 
 #print(commands)
-if '-h' in commands:
+def print_help():
 	print('Usage: ./attendance.py LINK [OPTION]');
 	print('Mark attendance online with given link');
 	print('-b	Work in background (headless mode)');
@@ -14,7 +14,13 @@ if '-h' in commands:
 	print('-sf \033[4mPATH/TO/DIRECTORY\033[0m	Save screenshot forcefully no matter what happens');
 	print('-sfd	Save screenshot forcefully no matter what happens at default location \033[4m/tmp\033[0m');
 	sys.exit();
-
+	
+if '-h' in commands:
+	print_help();
+	
+elif len(sys.argv) <= 1:
+	print_help();
+	
 from splinter import Browser
 browser = Browser('firefox', headless=("-b" in commands))
 url = str(sys.argv[1]);
