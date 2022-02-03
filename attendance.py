@@ -33,7 +33,7 @@ def get_path(pos):
 def take_ss():
 		print ("Taking Screenshot...");
 		ss_path = browser.screenshot("{}{}.png".format(path,str(datetime.now())))
-		print ("Screenshot  taken:{}.png".format(ss_path)
+		print ("Screenshot  taken:{}.png".format(ss_path))
 
 def print_success():
 	print ("Attendance Marked Successfully!");
