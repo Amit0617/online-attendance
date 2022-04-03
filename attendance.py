@@ -83,24 +83,21 @@ if 'surveyheart' in url:
     browser.find_by_id('Submit').click();
 
 #For google forms with 2 test input only
-elif 'forms.gle' in url:
+elif 'forms.gle' in url or 'docs.google.com/forms' in url:
     browser.find_by_tag('input')[2].fill('YourName/RollNo');
     browser.find_by_tag('input')[3].fill('YourName/RollNo');
     browser.find_by_css('.NPEfkd.RveJvd.snByac')[0].click();
 
 #For google forms with 1 text input only
 '''
-elif 'forms.gle' in url:
+elif 'forms.gle' in url or 'docs.google.com/forms' in url:
     browser.find_by_tag('input')[1].fill('YourName/RollNo');
     browser.find_by_class('.NPEfkd.RveJvd.snByac').click();
 '''
 #Comment out any one part of google forms above according to your condition
 
 #Printing Status in terminal
-if browser.is_text_present('Submitted') or browser.is_text_present('recorded'):
-    print_success();
-
-elif browser.is_text_present('successfully'):
+if browser.is_text_present('Submitted') or browser.is_text_present('recorded') or browser.is_text_present('successfully'):
     print_success();
 
 else:
