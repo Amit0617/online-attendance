@@ -2,9 +2,9 @@
 import sys;
 import os;
 from datetime import datetime
+
 commands = ' '.join(sys.argv[1:]);
 
-#print(commands)
 def print_help():
     print('Usage: ./attendance.py LINK [OPTION]');
     print('Mark attendance online with given link');
@@ -26,6 +26,8 @@ browser = Browser('firefox', headless=("-b" in commands))
 url = str(sys.argv[1]);
 
 print("Visiting {}".format(url));
+
+#creating list of args from commands string
 command_list = commands.split(' ');
 path = "None";
 
